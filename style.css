@@ -1,0 +1,30 @@
+.circle-outside-left {
+  clip-path: circle();
+  float: left;
+  shape-outside: circle(45%);
+  transform: translate(-15%);
+}
+.circle-outside-right {
+  clip-path: circle();
+  float: right;
+  shape-outside: circle(45%);
+  transform: translate(0);
+}
+
+.scroll-effect {
+  overflow-x: clip;
+}
+.scroll-effect-left {
+  transform: translateX(-200%);
+  transition: transform 0.8s ease;
+  opacity: 0.5;
+}
+.scroll-effect-right {
+  transform: translateX(200%);
+  transition: transform 0.8s ease;
+  opacity: 0.5;
+}
+.scroll-effect-active {
+  transform: translateX(0);
+  opacity: 1;
+}
